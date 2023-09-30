@@ -65,21 +65,3 @@ function Main:Exit()
 end
 
 
-function Main:Notify(msg)
-    local message = msg
-    if message == nil then 
-        return 
-    end
-
-    local Notif = {
-        text = message,
-        color = color or 130,
-        flash = flash or false,
-        save = saveToBrief or true 
-    }
-
-    BeginTextCommandThefeedPost('STRING')
-    AddTextComponentSubstringPlayerName(Notif.text)
-    ThefeedSetNextPostBackgroundColor(Notif.color)
-    EndTextCommandThefeedPostTicker(Notif.flash, Notif.save)
-end
