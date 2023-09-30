@@ -8,13 +8,11 @@ version '1.2.0'
 
 client_scripts {
     'config.lua',
-    'wrapper/cl_wrapper.lua',
     'client/client.lua',
-	'client/deleteme.lua',
+	
 }
 
 server_scripts {
-    'wrapper/sv_wrapper.lua',
     'server/server.lua'
 }
 
