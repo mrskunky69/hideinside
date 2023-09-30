@@ -1,7 +1,7 @@
 
 
 Lang = {
-    Hide = "Hide inside.",
-    Exit = "Exit.",
+    Hide = "Hide in Haybale",
+    Exit = "Exit Haybale",
     NotInside = "You are not inside.",
 }
