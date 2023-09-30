@@ -39,7 +39,7 @@ function Main:Enter()
     local ped = PlayerPedId()
     local pedCoords = GetEntityCoords(PlayerPedId())
     for k,v in pairs(Config.haybale.Model) do
-        local objectId = GetClosestObjectOfType(pedCoords, 1.0, Config.haybale.Model[k], false)
+        local objectId = GetClosestObjectOfType(pedCoords, Config.haybale.Distance, Config.haybale.Model[k], false)
         if DoesEntityExist(objectId) then
             inside = true
             local objectcoords = GetEntityCoords(objectId)
