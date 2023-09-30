@@ -1,2 +1,2 @@
-# rsg-hideintrash
+# rsg-hideinside
 
